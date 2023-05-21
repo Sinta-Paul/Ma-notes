@@ -14,7 +14,7 @@ def home(request):
         res=requests.get(url)
         soup=BeautifulSoup(res.content,'html.parser')
         text=soup.body.get_text()
-        api_key="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"
+        api_key="your_api_key"
         URL = "https://api.openai.com/v1/chat/completions"
         prompt="Can you make notes for this article:"+text
         payload = {
