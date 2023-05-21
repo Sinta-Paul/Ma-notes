@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+.maincontainer{
+    background-image: url("doodle.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color:#ffffff;
+    border-radius: 3%;
+    margin-left:20%;
+    margin-top: 10%;
+    width:50%;
+    height:40%;
+    padding: 5%;
+    font-family: "Abril Fatface";
+}
+.heading{
+    margin-left: 40%;
+}
+.heading2
+{
+    background-color:rgb(240, 78, 126);
+    max-width: max-content;
+    font-size: 3.5rem;
+    border-radius: 2%;
+    padding:2%;
+}
+.heading1{
+    font-size: 3rem;  
+}
+input[type=text]
+{
+    border: 2px solid black;
+    margin-top: 3%;
+    background: transparent;
+    padding: 0.5%;
+    width:70%;
+}
+input[type=submit]
+{
+    background-color: rgb(240, 78, 126);
+    color: black;
+    border-radius: 5%;
+    border: none;
+    font-family: "Abril Fatface";
+    padding:1% 2%;
+}

@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Abril Fatface" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'styles/cssstyle.css' %}?{% now 'U' %}">
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="heading">
+            <div class="heading1">Ma,</div>
+            <div class="heading2">Notes</div>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type="text" name="url" placeholder="Enter URL"/>
+            <input type="submit" value="get notes"/>
+        </form></div>
+        </div>
+        <h5>{{response}}</h5>
+        <br>
+        <h5>Links</h5>
+        {% for link in links %}
+        <p><a href={{link}}>{{link}}</a></p>
+        {% endfor %}
+    </body>
+</html>
